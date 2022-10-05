@@ -1,0 +1,104 @@
+/*
+nav css 
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 40%;
+    padding-right: 30%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: goldenrod;
+}
+
+hr.s1 {
+    padding: 1px;
+    height: 5px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    font-family: 'sans serif';
+}
+
+
+/*
+flex container
+*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 10px;
+}
+
+.flex-item-left {
+    flex: 50%;
+}
+
+.flex-item-right {
+    flex: 50%;
+}
+
+.cCo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 10px;
+    flex: 50%;
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+    ul,
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+}
+
+
+/*
+imagenes
+
+*/
+
+.imgCoete {
+    float: right;
+    width: 200px;
+    padding-right: 20px;
+}
