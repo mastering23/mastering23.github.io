@@ -1,14 +1,18 @@
-/*
-nav css 
-*/
+body {
+    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(109, 0, 199);
+    color: black;
+}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding-left: 40%;
-    padding-right: 30%;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
 
 li {
@@ -16,89 +20,66 @@ li {
 }
 
 li a {
-    display: inline-block;
-    color: black;
+    display: block;
+    color: #666;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    color: goldenrod;
+li a:hover:not(.active) {
+    background-color: rgb(0, 62, 104);
+    color: white;
 }
 
-hr.s1 {
-    padding: 1px;
-    height: 5px;
-    border-top: 1px solid black;
-    border-bottom: 2px solid black;
+li a.active {
+    color: white;
+    background-color: #04AA6D;
 }
 
-h1 {
-    font-family: 'sans serif';
+#logo {
+    width: 280px;
+    height: 200px;
+    background-color: #C6D580;
+    display: block;
 }
 
-
-/*
-flex container
-*/
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin: 10px;
+#tituloimag {
+    width: 500px;
 }
 
-.flex-item-left {
-    flex: 50%;
+.cabecera {
+    background-color: goldenrod;
 }
 
-.flex-item-right {
-    flex: 50%;
+.contenedor {
+    width: 960px;
+    background-color: #FFF;
+    margin: 0 auto;
 }
 
-.cCo {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin: 10px;
-    flex: 50%;
+.contenido {
+    padding: 10px;
 }
 
 footer {
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    color: white;
-    height: 200px;
+    padding: 10px 0;
+    background-color: #CCC49F;
 }
 
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-
-@media (max-width: 800px) {
-    ul,
-    li {
-        display: flex;
-        flex-direction: column;
-    }
-    .flex-item-right,
-    .flex-item-left {
-        flex: 100%;
-    }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
 
-/*
-imagenes
-
-*/
-
-.imgCoete {
-    float: right;
-    width: 200px;
-    padding-right: 20px;
+tr:nth-child(even) {
+    background-color: #b093ff;
 }
